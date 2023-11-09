@@ -1,5 +1,4 @@
 ﻿using ConSelenium.Mobile.Tests.Components;
-using ConSelenium.Mobile.Tests.Pages.Android.Header;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium;
 

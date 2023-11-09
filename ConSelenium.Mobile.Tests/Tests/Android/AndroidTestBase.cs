@@ -1,7 +1,4 @@
-﻿using OpenQA.Selenium.Appium.Android;
-using OpenQA.Selenium.Appium;
-
-namespace ConSelenium.Mobile.Tests.Tests.Android
+﻿namespace ConSelenium.Mobile.Tests.Tests.Android
 {
     public abstract class AndroidTestBase : TestBase
     {

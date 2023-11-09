@@ -1,7 +1,4 @@
-﻿using OpenQA.Selenium.Appium.iOS;
-using OpenQA.Selenium.Appium;
-
-namespace ConSelenium.Mobile.Tests.Tests.iOS
+﻿namespace ConSelenium.Mobile.Tests.Tests.iOS
 {
     public class IOSTestBase : TestBase
     {
