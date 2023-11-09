@@ -1,5 +1,5 @@
 # ConSelenium-appium-tests
-Cieszę się, że zdecydowałeś sie wziąć udział w moim warsztacie :)
+Cieszę się, że zdecydowałeś się wziąć udział w moim warsztacie :)
 
 Znajdziesz tutaj gotową solucje z przykładową strukturą testów oraz przykładowymi testami na warsztat ConSelenium 2023.
 
