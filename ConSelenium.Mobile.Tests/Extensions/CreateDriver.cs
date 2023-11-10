@@ -18,8 +18,8 @@ namespace ConSelenium.Mobile.Tests.Extensions
             options.AddAdditionalCapability("appium:newCommandTimeout", 90);
             var sauceOptions = new Dictionary<string, object>
             {
-                { "username", "damianotestowy" },
-                { "accessKey", "b9cedd81-0838-4493-89b5-a0c91555341c" },
+                { "username", "username" },
+                { "accessKey", "accessKey" },
                 { "deviceOrientation", "PORTRAIT" },
                 { "appiumVersion", "2.0.0" },
                 { "build", $"build-{appVesrion}" },
@@ -43,8 +43,8 @@ namespace ConSelenium.Mobile.Tests.Extensions
             options.AddAdditionalCapability("appium:newCommandTimeout", 90);
             var sauceOptions = new Dictionary<string, object>
             {
-                { "username", "damianotestowy" },
-                { "accessKey", "b9cedd81-0838-4493-89b5-a0c91555341c" },
+                { "username", "username" },
+                { "accessKey", "accessKey" },
                 { "deviceOrientation", "PORTRAIT" },
                 { "appiumVersion", "2.0.0" },
                 { "build", $"build-{appVesrion}" },
