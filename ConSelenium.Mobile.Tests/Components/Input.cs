@@ -15,5 +15,6 @@ namespace ConSelenium.Mobile.Tests.Components
         }
 
         public void SendKeys(string text) => _driver.WaitForVisible(_by).SendKeys(text);
+        public void SendKeysWithEnter(string text) => _driver.WaitForVisible(_by).SendKeys(text + "\n");
     }
 }

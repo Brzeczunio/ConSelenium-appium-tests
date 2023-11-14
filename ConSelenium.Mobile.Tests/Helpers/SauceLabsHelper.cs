@@ -3,9 +3,9 @@ using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.iOS;
 
-namespace ConSelenium.Mobile.Tests.Extensions
+namespace ConSelenium.Mobile.Tests.Helpers
 {
-    internal static class SauceLabs
+    internal static class SauceLabsHelper
     {
         public static IWebDriver CreateAndroidConnection(string appVesrion, string hubUrl, string testName)
         {

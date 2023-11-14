@@ -1,4 +1,4 @@
-﻿using ConSelenium.Mobile.Tests.Extensions;
+﻿using ConSelenium.Mobile.Tests.Helpers;
 using ConSelenium.Mobile.Tests.Pages.iOS;
 using FluentAssertions;
 
@@ -10,13 +10,13 @@ namespace ConSelenium.Mobile.Tests.Tests.iOS
         [Test]
         public void WhenUserLogIn_ShouldLogin()
         {
-            Driver = SauceLabs.CreateIOSConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
+            Driver = SauceLabsHelper.CreateIOSConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
 
             var loginPage = new LoginPage(Driver);
 
             loginPage.MoveToLoginPage();
             loginPage.LoginInput.SendKeys("bob@example.com");
-            loginPage.PasswordInput.SendKeys("10203040" + "\n");
+            loginPage.PasswordInput.SendKeysWithEnter("10203040");
             loginPage.LogInButton.Click();
 
             var checkoutAddressPage = new CheckoutAddressPage(Driver);
@@ -27,7 +27,7 @@ namespace ConSelenium.Mobile.Tests.Tests.iOS
         [Test]
         public void WhenUserAddsProduct_ShouldBeAdded()
         {
-            Driver = SauceLabs.CreateIOSConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
+            Driver = SauceLabsHelper.CreateIOSConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
 
             var productPage = new ProductsPage(Driver);
             productPage.Products.Click(0);

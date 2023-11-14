@@ -25,7 +25,9 @@ namespace ConSelenium.Mobile.Tests.Pages.Android
 
         public void MoveToAddToCartButton()
         {
-            ((AndroidDriver<AndroidElement>)Driver).ExecuteScript("mobile:scroll", new Dictionary<string, string> { { "strategy", "accessibility id" }, { "selector", "Add To Cart button" } });
+            ((AndroidDriver<AndroidElement>)Driver).ExecuteScript("mobile:scroll",
+                new Dictionary<string, string> { { "strategy", "accessibility id" },
+                    { "selector", "Add To Cart button" } });
         }
     }
 }

@@ -1,4 +1,4 @@
-using ConSelenium.Mobile.Tests.Extensions;
+using ConSelenium.Mobile.Tests.Helpers;
 using ConSelenium.Mobile.Tests.Pages.Android;
 using FluentAssertions;
 
@@ -10,7 +10,7 @@ namespace ConSelenium.Mobile.Tests.Tests.Android
         [Test]
         public void WhenUserLogIn_ShouldLogin()
         {
-            Driver = SauceLabs.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
+            Driver = SauceLabsHelper.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
 
             var loginPage = new LoginPage(Driver);
             loginPage.MoveToLoginPage();
@@ -26,7 +26,7 @@ namespace ConSelenium.Mobile.Tests.Tests.Android
         [Test]
         public void WhenUserAddsProduct_ShouldBeAdded()
         {
-            Driver = SauceLabs.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
+            Driver = SauceLabsHelper.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
 
             var productPage = new ProductsPage(Driver);
             productPage.Products.Click(0);
@@ -40,7 +40,7 @@ namespace ConSelenium.Mobile.Tests.Tests.Android
         [Test]
         public void WhenUserRemovesProduct_ShouldBeRemoved()
         {
-            Driver = SauceLabs.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
+            Driver = SauceLabsHelper.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
 
             var productPage = new ProductsPage(Driver);
             productPage.Products.Click(0);
@@ -58,7 +58,7 @@ namespace ConSelenium.Mobile.Tests.Tests.Android
         [Test]
         public void WhenUserSortsProductsInDescendingOrder_ShouldBeInDescendingOrder()
         {
-            Driver = SauceLabs.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
+            Driver = SauceLabsHelper.CreateAndroidConnection(AppVersion, HubUrl, TestContext.CurrentContext.Test.Name);
 
             var productPage = new ProductsPage(Driver);
             productPage.Header.SortButton.Click();
